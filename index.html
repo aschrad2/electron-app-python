@@ -5,13 +5,38 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Tax Payment Processor</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <h1></h1>
+
+    <div class="container">
+      <div class="divider"></div>
+      <a class="waves-effect waves-light btn">Create Files</a>
+      <!-- <a class="waves-effect waves-light btn">Download Jobs</a>
+      <a class="waves-effect waves-light btn">Format Excels</a>
+      <a class="waves-effect waves-light btn">Split PDFs</a>
+      <a class="waves-effect waves-light btn">Rename PDFs</a>
+      <a class="waves-effect waves-light btn">Run JTT</a>
+      <a class="waves-effect waves-light btn">Format JTT</a>
+      <a class="waves-effect waves-light btn">Run JTT for REOs</a>
+      <a class="waves-effect waves-light btn">Add Bill Fees</a>
+      <a class="waves-effect waves-light btn">Highlight DNP in Red</a>
+      <a class="waves-effect waves-light btn">Remove Highlighting of REOs</a>
+      <a class="waves-effect waves-light btn">Display Approval Needed</a> -->
+    </div>
+
+    <div class="container">
+      <div class="progress" id="progress-bar">
+        <div class="indeterminate"></div>
+      </div>
+    </div>
+
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
